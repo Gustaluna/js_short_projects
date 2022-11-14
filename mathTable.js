@@ -1,7 +1,7 @@
 const prompt = require("./prompt")
 
 function callCalculatorMenu () {
-    console.log("Wellcome to your oepration table")
+    console.log("Wellcome to your opration table")
     console.log("Choose one of the option below")
     console.log("1. Addition")
     console.log("2. Subtraction")
