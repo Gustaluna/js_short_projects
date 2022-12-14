@@ -14,10 +14,12 @@ async function cpf (){
     let SegundoPasso = Number (PrimeiroPasso % 11)
     if (SegundoPasso <= 1){
         SegundoPasso = 0
-    }   
+    }
+       
     else{
         SegundoPasso = 11 - SegundoPasso
     }
+
     let TerceiroPasso = Number (digito[0] * 11 + digito[1] * 10 + digito[2] * 9 + digito[3] * 8 + digito[4] * 7 + digito[5] * 6 + digito[6] * 5 + digito[7] * 4 + digito[8] * 3 + digito[9] * 2)
     let QuartoPasso = Number (TerceiroPasso % 11)
     if (QuartoPasso <= 1){
@@ -36,8 +38,9 @@ async function cpf (){
           return result
         }
         return false
-}
-        if (digito.length === 11 && SegundoPasso === digito[9] && QuartoPasso === digito[10] && allAreEqual(digito) === false){
+        }
+
+        if (digito.lengthn === 11 && SegundoPasso === digito[9] && QuartoPasso === digito[10] && allAreEqual(digito) === false){
             console.log('CPF Válido')
     } else
             console.log('CPF Inválido')
