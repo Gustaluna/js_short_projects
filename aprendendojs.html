@@ -8,28 +8,31 @@
 </head>
 <body>
    <script>
+    
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostraMenssagem(frase) {
+        document.write(frase)
+        pulaLinha()
+    }
 
     let ano = 2017;
 
-    document.write("Flávio tem " + (ano - 1977) + " anos");
-    document.write("<br>");
-    document.write("Joaquim tem " + (ano - 1996) + " anos");
-    document.write("<br>");
+    // document.write("Flávio tem " + (ano - 1977) + " anos");
+    mostraMenssagem("Flávio tem " + (ano - 1977) + " anos");
+
+    // document.write("Joaquim tem " + (ano - 1996) + " anos");
+    mostraMenssagem("Joaquim tem " + (ano - 1996) + " anos")
     
     ano = 2016
 
-    document.write("Barney tem " + (ano - 1976) + " anos");
-    document.write("<br>");
+    // document.write("Barney tem " + (ano - 1976) + " anos");
+    mostraMenssagem("Barney tem " + (ano - 1976) + " anos")
 
-    let idadeFlavio = 39;
-    let idadeJoaquim = 20;
-    let idadeBarney = 41;
-    let media = (idadeFlavio + idadeJoaquim + idadeBarney)/3;
-    document.write('A média das idades é ' + Math.round(media));
 
-    let nome = "Flávio";
-    document.write(2* "<br>")
-    document.write("A idade de " + nome + " é " + idadeFlavio);
    </script> 
 </body>
 </html>
