@@ -22,12 +22,11 @@
     function calculaImc (peso, altura) {
        
         let imc = Math.round(peso / (altura * altura));
-        mostraMenssagem(" O IMC calculado é " + imc);
+        return imc;
     }
 
-    calculaImc(73,  1.71)
-    calculaImc(68,  1.72)
-    calculaImc(43, 1.50)
+    var imcFlavio = calculaImc(73,  1.71);
+    var imcAmigo = calculaImc(68,  1.72);
     </script>
 </body>
 </html>
