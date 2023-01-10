@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Copa</title>
+</head>
+<body>
+    <script>
+        function pulaLinha() {
+            document.write("<br>");
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        let totalFamiliares = parseInt(prompt("Quantidade de familiares: "));
+
+        let numero = 1;
+        let totalIdades = 0;
+        
+        while (numero <= totalFamiliares) {
+            let idade = parseInt(prompt("Informe a quantidade do familiares"));
+            numero++
+        }
+
+        let mediaDasIdades = totalIdades/totalFamiliares
+        mostra("A média das idades dos familiares é " + mediaDasIdades)
+        mostra("FIM")
+    </script>
+</body>
+</html>
